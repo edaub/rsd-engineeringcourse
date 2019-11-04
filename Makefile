@@ -58,7 +58,7 @@ master.zip: Makefile
 	rm -f master.zip
 	wget https://github.com/Giovanni1085/indigo-jekyll/archive/master.zip
 
-ready: indigo $(HTMLS) notebooks.zip
+ready: indigo $(HTMLS) notes.pdf notebooks.zip
 
 indigo-jekyll-master: Makefile master.zip
 	rm -rf indigo-jekyll-master
@@ -119,7 +119,7 @@ clean:
 	rm -rf ch09*/*.hdf5
 	rm -rf ch09*/*.py
 	rm -rf ch09*/*.db
-	rm -rf ch09*/*.out 
+	rm -rf ch09*/*.out
 	rm -rf ch09*/*.mol
 	rm -rf ch09*/*.tex
 	rm -rf ch09*/*.ttl
